@@ -1,0 +1,22 @@
+{
+  "name": "bettercss-objects-tables",
+  "version": "0.0.1",
+  "description": "Simple tables object for bettercss framework",
+  "main": "_objects.tables.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bettercss/objects.tables.git"
+  },
+  "author": "Mike Bailey <mib@bettercollective.com>",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/bettercss/objects.tables/issues"
+  },
+  "homepage": "https://github.com/bettercss/objects.tables",
+  "keywords": [
+    "bettercss",
+    "toolkit",
+    "css",
+    "scss"
+  ]
+}
