@@ -32,10 +32,10 @@ $bc-o-table-enable--rows-striped:              false !default;
 $bc-o-table-color-background--columns-striped: #eee !default;
 $bc-o-table-color-background--rows-striped:    #eee !default;
 
-$bc-o-table-padding--tiny:                     round($bc-o-box-spacing-unit / 4) !default;
-$bc-o-table-padding--small:                    round($bc-o-box-spacing-unit / 2) !default;
-$bc-o-table-padding--large:                    round($bc-o-box-spacing-unit * 2) !default;
-$bc-o-table-padding--huge:                     round($bc-o-box-spacing-unit * 4) !default;
+$bc-o-table-padding--tiny:                     round($bc-o-tables-spacing-unit / 4) !default;
+$bc-o-table-padding--small:                    round($bc-o-tables-spacing-unit / 2) !default;
+$bc-o-table-padding--large:                    round($bc-o-tables-spacing-unit * 2) !default;
+$bc-o-table-padding--huge:                     round($bc-o-tables-spacing-unit * 4) !default;
 
 
 
