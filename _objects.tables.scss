@@ -38,8 +38,13 @@ $bc-o-table-padding--large:                    round($bc-o-box-spacing-unit * 2)
 $bc-o-table-padding--huge:                     round($bc-o-box-spacing-unit * 4) !default;
 
 
+
+
+
 /**
- * Structural table classes.
+ * Table root class.
+ *
+ * .o-table {}
  */
 
 .o-table {}
