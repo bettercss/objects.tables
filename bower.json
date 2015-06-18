@@ -6,7 +6,7 @@
     "Andrés Díez <andres@bettercollective.com>",
     "Mike Bailey <mib@bettercollective.com>"
   ],
-  "description": "Simple tables object for bettercss framework",
+  "description": "Table object",
   "main": "_objects.tables.scss",
   "keywords": [
     "bettercss",

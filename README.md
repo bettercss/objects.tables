@@ -1,11 +1,5 @@
-# Tables
-
-The bettercss `tables` module contains useful helpers for common table patterns.
+# Objects.Tables
 
 Install using Bower:
 
     $ bower install --save bettercss-objects-tables
-
-Install using npm:
-
-    $ npm install --save bettercss-objects-tables
