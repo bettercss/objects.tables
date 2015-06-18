@@ -1,48 +1,57 @@
-/*------------------------------------*\
-    #TABLES
-\*------------------------------------*/
+/*----------------------------------------------------------------------------*\
+    OBJECTS.TABLES
+\*----------------------------------------------------------------------------*/
 
 /**
- * Simple table abstraction.
+ * Table Object
  *
- * https://github.com/inuitcss/objects.tables/blob/6fb5c190e3f5f33eaf15177dee63eb545fc3d9c3/_objects.tables.scss
+ * CREDITS:
+ * - https://github.com/inuitcss/objects.tables/blob/6fb5c190e3f5f33eaf15177dee63eb545fc3d9c3/_objects.tables.scss
  */
 
 
 
-// Predefine the variables below in order to alter and enable specific features.
 
-$bc-o-tables-spacing-unit:                     18px !default;
-$bc-o-tables-padding:                          $bc-o-tables-spacing-unit !default;
+
+ // PREDEFINED VARIABLES
+ // =============================================================================
+
+ // Enable features
 
 $bc-o-table-enable--tiny:                      false !default;
 $bc-o-table-enable--small:                     false !default;
 $bc-o-table-enable--large:                     false !default;
 $bc-o-table-enable--huge:                      false !default;
-
-$bc-o-table-enable--fixed:                     false !default;
-
 $bc-o-table-enable--cells-border:              false !default;
 $bc-o-table-enable--rows-border:               false !default;
-$bc-o-table-color-border--cells-border:        #ccc !default;
-$bc-o-table-color-border--rows-border:         #ccc !default;
-
 $bc-o-table-enable--columns-striped:           false !default;
 $bc-o-table-enable--rows-striped:              false !default;
-$bc-o-table-color-background--columns-striped: #eee !default;
-$bc-o-table-color-background--rows-striped:    #eee !default;
 
+// Spacing
+
+$bc-o-tables-spacing-unit:                     18px !default;
+$bc-o-tables-padding:                          $bc-o-tables-spacing-unit !default;
 $bc-o-table-padding--tiny:                     round($bc-o-tables-spacing-unit / 4) !default;
 $bc-o-table-padding--small:                    round($bc-o-tables-spacing-unit / 2) !default;
 $bc-o-table-padding--large:                    round($bc-o-tables-spacing-unit * 2) !default;
 $bc-o-table-padding--huge:                     round($bc-o-tables-spacing-unit * 4) !default;
 
+// Colors
+
+$bc-o-table-color-background--columns-striped: #eee !default;
+$bc-o-table-color-background--rows-striped:    #eee !default;
+$bc-o-table-color-border--cells-border:        #ccc !default;
+$bc-o-table-color-border--rows-border:         #ccc !default;
 
 
 
+
+
+// BASE
+// =============================================================================
 
 /**
- * Table root class.
+ * Table.
  *
  * .o-table {}
  */
@@ -52,31 +61,33 @@ $bc-o-table-padding--huge:                     round($bc-o-tables-spacing-unit *
 
 
 
-@if ($bc-o-table-enable--fixed == true) {
 
-  /**
-   * Force all cells to be equal-sized.
-   */
 
-  .o-table--fixed {
+// BASE MODIFIERS
+// =============================================================================
+
+/**
+ * Force all cells to be equal-sized.
+ */
+
+.o-table--equal {
     table-layout: fixed;
-  }
-
 }
 
 
 
 
 
-/**
- * Cell size variants.
- */
+// SPACING MODIFIERS
+// =============================================================================
+
 
 @if ($bc-o-table-enable--tiny == true) {
 
   /**
   * Tiny
   */
+
   .o-table--tiny {
 
     th, td {
@@ -92,6 +103,7 @@ $bc-o-table-padding--huge:                     round($bc-o-tables-spacing-unit *
   /**
   * Small
   */
+
   .o-table--small {
 
     th, td {
@@ -107,6 +119,7 @@ $bc-o-table-padding--huge:                     round($bc-o-tables-spacing-unit *
   /**
   * Large
   */
+
   .o-table--large {
 
     th, td {
@@ -122,6 +135,7 @@ $bc-o-table-padding--huge:                     round($bc-o-tables-spacing-unit *
   /**
   * Huge
   */
+
   .o-table--huge {
 
     th, td {
@@ -135,15 +149,16 @@ $bc-o-table-padding--huge:                     round($bc-o-tables-spacing-unit *
 
 
 
-/**
- * Add borders to either cells or rows.
- */
+
+// THEMING MODIFIERS
+// =============================================================================
 
 @if ($bc-o-table-enable--cells-border == true) {
 
  /**
  * Borders on cells
  */
+
   .o-table--cells-border {
 
     th, td {
@@ -159,6 +174,7 @@ $bc-o-table-padding--huge:                     round($bc-o-tables-spacing-unit *
   /**
   * Borders on rows
   */
+
   .o-table--rows-border {
 
     th, td {
@@ -169,19 +185,12 @@ $bc-o-table-padding--huge:                     round($bc-o-tables-spacing-unit *
 
 }
 
-
-
-
-
-/**
- * Add background color to either odd columns or rows.
- */
-
 @if ($bc-o-table-enable--columns-striped == true) {
 
   /**
   * Columns
   */
+
   .o-table--columns-striped {
 
     tbody td:nth-of-type(odd),
@@ -198,6 +207,7 @@ $bc-o-table-padding--huge:                     round($bc-o-tables-spacing-unit *
   /**
   * Rows
   */
+
   .o-table--rows-striped {
 
     tbody tr:nth-of-type(odd) {
