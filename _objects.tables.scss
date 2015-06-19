@@ -155,9 +155,9 @@ $bc-o-table-color-border--rows-border:         #ccc !default;
 
 @if ($bc-o-table-enable--cells-border == true) {
 
- /**
- * Borders on cells
- */
+  /**
+   * Borders on cells
+   */
 
   .o-table--cells-border {
 
