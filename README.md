@@ -24,7 +24,7 @@ $bc-o-table-enable--columns-striped
 $bc-o-table-enable--rows-striped
 ```
 
-### Misc
+### Others
 
 ```
 // Spacing
