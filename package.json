@@ -1,0 +1,24 @@
+{
+  "name": "bettercss-objects-tables",
+  "description": "Tables object module for BetterCSS",
+  "version": "0.0.1",
+  "style": "_index.scss",
+  "files": [
+    "_index.scss",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bettercss/base.git"
+  },
+  "keywords": [
+    "tables",
+    "objects",
+    "bettercss",
+    "css",
+    "scss"
+  ],
+  "dependencies": {
+    "bettercss-base": "*"
+  }
+}
