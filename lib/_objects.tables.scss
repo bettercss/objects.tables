@@ -193,14 +193,13 @@ $bc-o-table-border--rows-border: 				solid 1px #ccc !default;
 	 * Table with Striped Columns
 	 */
 
-	.o-table--columns-striped {
+    .o-table--columns-striped {
 
-		tbody td:nth-of-type(odd),
-		th:nth-of-type(odd) {
-			background-color: $bc-o-table-color-background--columns-striped;
-		}
+        tr > :nth-child(odd) {
+            background-color: $bc-o-table-color-background--columns-striped;
+        }
 
-	}
+    }
 
 }
 
