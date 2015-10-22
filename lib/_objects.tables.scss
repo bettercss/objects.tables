@@ -180,7 +180,7 @@ $bc-o-table-border--rows-border: 				solid 1px #ccc !default;
 	.o-table--rows-border {
 
 		th, td {
-			border-bottom: 1px solid $bc-o-table-border--rows-border;
+			border-bottom: $bc-o-table-border--rows-border;
 		}
 
 	}
