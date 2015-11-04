@@ -1,11 +1,12 @@
 {
   "name": "bettercss-objects-tables",
   "description": "Tables object module for BetterCSS",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "style": "_index.scss",
   "files": [
     "_index.scss",
-    "lib"
+    "lib",
+    "docs"
   ],
   "repository": {
     "type": "git",
